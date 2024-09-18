@@ -47,3 +47,27 @@ Before you begin, ensure you have the following installed:
 Node.js and npm (Node Package Manager): Download Node.js
 Serverless Framework: Install it globally using npm install -g serverless
 
+
+
+serverless-iam-roles-per-function: A Serverless Framework plugin for defining IAM roles per function, improving security by minimizing permissions.
+
+
+
+We’ll create six lambda functions:
+
+· 
+
+· 
+
+· create-quiz to create a new tutorial
+
+· update-quiz to update a tutorial
+
+· delete-quiz to delete a tutorial .
+  get-quiz to return only one quiz .
+  get-all-quiz to return all the quizes in the database .
+
+
+
+
+
