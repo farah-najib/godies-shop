@@ -1,0 +1,2329 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 5216,
+            "name": "Gott & Blandat Giants",
+            "price": 12,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/1997509-300x300.png",
+                "large": "/storage/products/1997509.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6545,
+            "name": "Banana Bubs",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/156622-300x300.png",
+                "large": "/storage/products/156622.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 8,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6563,
+            "name": "Banana Splits",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3827741-300x300.png",
+                "large": "/storage/products/3827741.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 6,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6599,
+            "name": "Ananas",
+            "price": 9,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/2147890-1-300x300.png",
+                "large": "/storage/products/2147890-1.png"
+            },
+            "stock_status": "outofstock",
+            "stock_quantity": null,
+            "tags": []
+        },
+        {
+            "id": 6600,
+            "name": "Bubs Cool Cola Skalle",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/1595204-300x300.png",
+                "large": "/storage/products/1595204.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 4,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6601,
+            "name": "Center",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200423-300x300.png",
+                "large": "/storage/products/200423.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 13,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6603,
+            "name": "Chokladpopcorn",
+            "price": 10,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3697328-300x300.png",
+                "large": "/storage/products/3697328.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 6,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6604,
+            "name": "Choko Moment",
+            "price": 4,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3149569-300x300.png",
+                "large": "/storage/products/3149569.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6607,
+            "name": "Cola Rocketz",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/2502327-300x300.png",
+                "large": "/storage/products/2502327.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 8,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6608,
+            "name": "Colanappar",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/173452-300x300.png",
+                "large": "/storage/products/173452.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 2,
+            "tags": []
+        },
+        {
+            "id": 6610,
+            "name": "Daim",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/144085-300x300.png",
+                "large": "/storage/products/144085.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 2,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6611,
+            "name": "Delicatoboll Mini",
+            "price": 5,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3307531-300x300.png",
+                "large": "/storage/products/3307531.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6612,
+            "name": "Nöt-Crémespralin Delicatoboll",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3737777-300x300.png",
+                "large": "/storage/products/3737777.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 10,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6613,
+            "name": "Dumle Original",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200411-300x300.png",
+                "large": "/storage/products/200411.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 12,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6615,
+            "name": "Fazermint",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200408-300x300.png",
+                "large": "/storage/products/200408.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 8,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6616,
+            "name": "Ferrari",
+            "price": 10,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200361-300x300.png",
+                "large": "/storage/products/200361.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6617,
+            "name": "Ferrari Cola",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/151398-300x300.png",
+                "large": "/storage/products/151398.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6618,
+            "name": "FizzyPop",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/154276-300x300.png",
+                "large": "/storage/products/154276.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 4,
+            "tags": []
+        },
+        {
+            "id": 6619,
+            "name": "Fruktnappar",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/173451-300x300.png",
+                "large": "/storage/products/173451.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 2,
+            "tags": []
+        },
+        {
+            "id": 6622,
+            "name": "Geisha",
+            "price": 4,
+            "on_sale": true,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200410-300x300.png",
+                "large": "/storage/products/200410.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 13,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6623,
+            "name": "Geléhallon",
+            "price": 9,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/1506469-300x300.png",
+                "large": "/storage/products/1506469.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 1,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6624,
+            "name": "Gröna Grodor",
+            "price": 11,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200421-300x300.png",
+                "large": "/storage/products/200421.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 2,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6625,
+            "name": "Guldbamsar",
+            "price": 10,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/173457-300x300.png",
+                "large": "/storage/products/173457.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 9,
+            "tags": []
+        },
+        {
+            "id": 6626,
+            "name": "Hallon/Lakritsskalle",
+            "price": 9,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/161229-300x300.png",
+                "large": "/storage/products/161229.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 1,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6627,
+            "name": "Hallonbåtar",
+            "price": 12,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/1506470-300x300.png",
+                "large": "/storage/products/1506470.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 9,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6628,
+            "name": "Hallonlakritsskalle Skum",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/112460-300x300.png",
+                "large": "/storage/products/112460.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 13,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6629,
+            "name": "Happy Cola Filled",
+            "price": 7,
+            "on_sale": true,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/267396-300x300.png",
+                "large": "/storage/products/267396.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 6,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6630,
+            "name": "Hot Lips",
+            "price": 7,
+            "on_sale": true,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200413-300x300.png",
+                "large": "/storage/products/200413.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6631,
+            "name": "Häxvrål",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200367-300x300.png",
+                "large": "/storage/products/200367.png"
+            },
+            "stock_status": "outofstock",
+            "stock_quantity": null,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6633,
+            "name": "Jätte Colaflaska",
+            "price": 11,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/156610-300x300.png",
+                "large": "/storage/products/156610.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 2,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6634,
+            "name": "Jättenappar Frukt",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/173459-300x300.png",
+                "large": "/storage/products/173459.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": []
+        },
+        {
+            "id": 6635,
+            "name": "Kinder Maxi",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/2102365-300x300.png",
+                "large": "/storage/products/2102365.png"
+            },
+            "stock_status": "outofstock",
+            "stock_quantity": null,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6636,
+            "name": "Kolaskruv Megasize",
+            "price": 11,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/2625808-300x300.png",
+                "large": "/storage/products/2625808.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 13,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6637,
+            "name": "Körsbär",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/173458-300x300.png",
+                "large": "/storage/products/173458.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 12,
+            "tags": []
+        },
+        {
+            "id": 6638,
+            "name": "Lakritsbåtar",
+            "price": 10,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/2502321-300x300.png",
+                "large": "/storage/products/2502321.png"
+            },
+            "stock_status": "outofstock",
+            "stock_quantity": null,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6639,
+            "name": "Lys Melk",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200422-300x300.png",
+                "large": "/storage/products/200422.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 9,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6640,
+            "name": "M&M's Peanut",
+            "price": 9,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/218032-300x300.png",
+                "large": "/storage/products/218032.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 9,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6641,
+            "name": "Majsbollar",
+            "price": 9,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200538-300x300.png",
+                "large": "/storage/products/200538.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6642,
+            "name": "Mandelägg",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/1959558-300x300.png",
+                "large": "/storage/products/1959558.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 9,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6643,
+            "name": "Marabou Mjölkchoklad",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/144088-300x300.png",
+                "large": "/storage/products/144088.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 2,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6644,
+            "name": "Mini Mentos jordgubb",
+            "price": 9,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3624530-300x300.png",
+                "large": "/storage/products/3624530.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 7,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6645,
+            "name": "Minidynamit Sur Jordgubb",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/112871-300x300.png",
+                "large": "/storage/products/112871.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6647,
+            "name": "Mormors Löständer",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200337-300x300.png",
+                "large": "/storage/products/200337.png"
+            },
+            "stock_status": "outofstock",
+            "stock_quantity": null,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6648,
+            "name": "Nougatägg Stanniol",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/2446142-300x300.png",
+                "large": "/storage/products/2446142.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 11,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6649,
+            "name": "Nöt-Créme",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200549-300x300.png",
+                "large": "/storage/products/200549.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6651,
+            "name": "Nöt-Crémespraliner Cookie Dough",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3378093-300x300.png",
+                "large": "/storage/products/3378093.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 9,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6652,
+            "name": "Pasta Basta Jordgubb",
+            "price": 4,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/272743-300x300.png",
+                "large": "/storage/products/272743.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6653,
+            "name": "Pastellfisk",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200348-300x300.png",
+                "large": "/storage/products/200348.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 4,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6655,
+            "name": "Persikor",
+            "price": 12,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/173119-300x300.png",
+                "large": "/storage/products/173119.png"
+            },
+            "stock_status": "outofstock",
+            "stock_quantity": null,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6657,
+            "name": "Pistols Jordgubb",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/262867-300x300.png",
+                "large": "/storage/products/262867.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": []
+        },
+        {
+            "id": 6659,
+            "name": "Polly Original",
+            "price": 5,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/156907-300x300.png",
+                "large": "/storage/products/156907.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 10,
+            "tags": []
+        },
+        {
+            "id": 6660,
+            "name": "Punschkottar",
+            "price": 9,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3563806-300x300.png",
+                "large": "/storage/products/3563806.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 10,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6661,
+            "name": "Punschpraliner",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3563831-300x300.png",
+                "large": "/storage/products/3563831.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6662,
+            "name": "Konfekta Dragéägg",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/236332-300x300.png",
+                "large": "/storage/products/236332.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 6,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6663,
+            "name": "Rabarberbitar",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200362-300x300.png",
+                "large": "/storage/products/200362.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 15,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6665,
+            "name": "Riesen",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/148011-300x300.png",
+                "large": "/storage/products/148011.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 11,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6666,
+            "name": "Rollo Kola",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200345-300x300.png",
+                "large": "/storage/products/200345.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 2,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6667,
+            "name": "Romerska Bågar",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/203502-300x300.png",
+                "large": "/storage/products/203502.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 12,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6668,
+            "name": "Rotella",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/173454-300x300.png",
+                "large": "/storage/products/173454.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6669,
+            "name": "Salt Sill",
+            "price": 10,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200350-300x300.png",
+                "large": "/storage/products/200350.png"
+            },
+            "stock_status": "outofstock",
+            "stock_quantity": null,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6670,
+            "name": "Salt Vit Chokladlakrits",
+            "price": 12,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/1506559-300x300.png",
+                "large": "/storage/products/1506559.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 6,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6671,
+            "name": "Salta Nappar",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/173462-300x300.png",
+                "large": "/storage/products/173462.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 2,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6672,
+            "name": "Sandwich",
+            "price": 5,
+            "on_sale": true,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3588173-300x300.png",
+                "large": "/storage/products/3588173.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 4,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6674,
+            "name": "Skipper's Pipes",
+            "price": 9,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/947358-300x300.png",
+                "large": "/storage/products/947358.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 10,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6675,
+            "name": "Skittles Fruit",
+            "price": 12,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/1506140-300x300.png",
+                "large": "/storage/products/1506140.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6677,
+            "name": "Snickers Miniatures",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200356-300x300.png",
+                "large": "/storage/products/200356.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 6,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6678,
+            "name": "Sockerbitar Original",
+            "price": 4,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200529-300x300.png",
+                "large": "/storage/products/200529.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6680,
+            "name": "Sour Winegums",
+            "price": 12,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200336-300x300.png",
+                "large": "/storage/products/200336.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 2,
+            "tags": []
+        },
+        {
+            "id": 6682,
+            "name": "Stora Colaflaskor",
+            "price": 9,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200340-300x300.png",
+                "large": "/storage/products/200340.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 1,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6684,
+            "name": "Stora Hjärtan",
+            "price": 11,
+            "on_sale": true,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/157273-300x300.png",
+                "large": "/storage/products/157273.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6685,
+            "name": "Stora Kolaskruvar",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/1057407-300x300.png",
+                "large": "/storage/products/1057407.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 1,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6686,
+            "name": "Stora Mjuka Blå",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/116656-300x300.png",
+                "large": "/storage/products/116656.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6687,
+            "name": "Stora Nappar Hallon & Lakrits",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3831484-300x300.png",
+                "large": "/storage/products/3831484.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": []
+        },
+        {
+            "id": 6688,
+            "name": "Stora Råttor",
+            "price": 10,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/129896-300x300.png",
+                "large": "/storage/products/129896.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 1,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6689,
+            "name": "Stora Surskallar",
+            "price": 9,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/177188-300x300.png",
+                "large": "/storage/products/177188.png"
+            },
+            "stock_status": "outofstock",
+            "stock_quantity": null,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6690,
+            "name": "Sur Violbanan",
+            "price": 4,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3827548-300x300.png",
+                "large": "/storage/products/3827548.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 9,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6691,
+            "name": "Sura Colanappar",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/161560-300x300.png",
+                "large": "/storage/products/161560.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 4,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6694,
+            "name": "Sweethearts",
+            "price": 7,
+            "on_sale": true,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/203997-300x300.png",
+                "large": "/storage/products/203997.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 6,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6695,
+            "name": "Syrliga Happy Chews",
+            "price": 9,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/173450-300x300.png",
+                "large": "/storage/products/173450.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": []
+        },
+        {
+            "id": 6696,
+            "name": "Tennis XL",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200357-300x300.png",
+                "large": "/storage/products/200357.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 9,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6697,
+            "name": "Tuttifrutti Passion",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/237158-300x300.png",
+                "large": "/storage/products/237158.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 10,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6698,
+            "name": "Tuttifrutti Rings",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/113195-300x300.png",
+                "large": "/storage/products/113195.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 7,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 6699,
+            "name": "Twix Miniatures",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200533-300x300.png",
+                "large": "/storage/products/200533.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6700,
+            "name": "Walker's Liquorice Toffee",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/120091-300x300.png",
+                "large": "/storage/products/120091.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 4,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 6702,
+            "name": "Vattenmeloner",
+            "price": 7,
+            "on_sale": true,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/157315-300x300.png",
+                "large": "/storage/products/157315.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 15,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6703,
+            "name": "Winegums",
+            "price": 12,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200335-300x300.png",
+                "large": "/storage/products/200335.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 2,
+            "tags": []
+        },
+        {
+            "id": 6704,
+            "name": "Violpistoler",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/200418-300x300.png",
+                "large": "/storage/products/200418.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 9,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6705,
+            "name": "Vit Chokladhallonbåt",
+            "price": 9,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/3697331-300x300.png",
+                "large": "/storage/products/3697331.png"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 6706,
+            "name": "Zoo Original",
+            "price": 10,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/203114-300x300.png",
+                "large": "/storage/products/203114.png"
+            },
+            "stock_status": "outofstock",
+            "stock_quantity": null,
+            "tags": []
+        },
+        {
+            "id": 6916,
+            "name": "Marsipanägg",
+            "price": 11,
+            "on_sale": true,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/marsipanägg-300x300.jpg",
+                "large": "/storage/products/marsipanägg.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 9,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 7266,
+            "name": "Stor Sur Smultron",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/stor_sur_smultron-300x300.jpg",
+                "large": "/storage/products/stor_sur_smultron.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 1,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 7461,
+            "name": "American Peanut & Salty Caramel",
+            "price": 10,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/american_peanut-300x300.jpg",
+                "large": "/storage/products/american_peanut.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 1,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 7942,
+            "name": "Sura Vattenmelonnappar",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/sur_vattenmelonnapp-300x300.jpg",
+                "large": "/storage/products/sur_vattenmelonnapp.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 6,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 115,
+                    "name": "Vegansk",
+                    "slug": "vegansk"
+                }
+            ]
+        },
+        {
+            "id": 8021,
+            "name": "KitKat",
+            "price": 5,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/kitkat-300x300.jpg",
+                "large": "/storage/products/kitkat.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 8710,
+            "name": "Delicato Punschrulle Mini",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/dammsugare-300x300.jpg",
+                "large": "/storage/products/dammsugare.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 10048,
+            "name": "Cadillacs",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/cadillac-300x300.jpg",
+                "large": "/storage/products/cadillac.jpg"
+            },
+            "stock_status": "outofstock",
+            "stock_quantity": null,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 10813,
+            "name": "Kinder Bueno White Mini",
+            "price": 4,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/kinder_bueno_white_mini-300x300.jpg",
+                "large": "/storage/products/kinder_bueno_white_mini.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 8,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 11195,
+            "name": "Werther's Original Creamy Filling",
+            "price": 4,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/wertherscreamy-300x300.jpg",
+                "large": "/storage/products/wertherscreamy.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 7,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 11208,
+            "name": "Fazer Marianne Drops",
+            "price": 5,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/marianne-300x300.jpg",
+                "large": "/storage/products/marianne.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 8,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                }
+            ]
+        },
+        {
+            "id": 11209,
+            "name": "Aroma Påskharen Bunny",
+            "price": 3,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/paskhare-1-300x300.jpg",
+                "large": "/storage/products/paskhare-1.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 7,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 11213,
+            "name": "Fizzybubble ägg",
+            "price": 5,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/fizzyagg-300x300.jpg",
+                "large": "/storage/products/fizzyagg.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 1,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 11559,
+            "name": "Carletti Skumbanan",
+            "price": 8,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/Carletti-300x300.jpg",
+                "large": "/storage/products/Carletti.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 8,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 12439,
+            "name": "Nöt-crème kanelbulle",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/notcremekanelbulle-300x300.jpg",
+                "large": "/storage/products/notcremekanelbulle.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 124,
+                    "name": "Nyhet!",
+                    "slug": "nyhet"
+                }
+            ]
+        },
+        {
+            "id": 12835,
+            "name": "Ferrari päron",
+            "price": 10,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/Ferrariparon-300x300.jpg",
+                "large": "/storage/products/Ferrariparon.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 124,
+                    "name": "Nyhet!",
+                    "slug": "nyhet"
+                }
+            ]
+        },
+        {
+            "id": 12837,
+            "name": "Jätte Fizzyflaskan",
+            "price": 11,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/fizzy-300x300.jpg",
+                "large": "/storage/products/fizzy.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 124,
+                    "name": "Nyhet!",
+                    "slug": "nyhet"
+                }
+            ]
+        },
+        {
+            "id": 13730,
+            "name": "Ritter sport Mini whole hazelnuts",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/ritter-helnot-300x300.jpg",
+                "large": "/storage/products/ritter-helnot.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 6,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 124,
+                    "name": "Nyhet!",
+                    "slug": "nyhet"
+                }
+            ]
+        },
+        {
+            "id": 13731,
+            "name": "Ritter sport Mini marzipan",
+            "price": 7,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/ritter-marsipan-300x300.jpg",
+                "large": "/storage/products/ritter-marsipan.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 9,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                },
+                {
+                    "id": 124,
+                    "name": "Nyhet!",
+                    "slug": "nyhet"
+                }
+            ]
+        },
+        {
+            "id": 14631,
+            "name": "Nöt-Crème Mandel Lönnsirap",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/lonnsirap-300x300.jpg",
+                "large": "/storage/products/lonnsirap.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 10,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 124,
+                    "name": "Nyhet!",
+                    "slug": "nyhet"
+                }
+            ]
+        },
+        {
+            "id": 14636,
+            "name": "Nöt-Crème Salmiak Svartvinbär",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/salmiak-svartvinbar-300x300.jpg",
+                "large": "/storage/products/salmiak-svartvinbar.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 5,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 124,
+                    "name": "Nyhet!",
+                    "slug": "nyhet"
+                }
+            ]
+        },
+        {
+            "id": 15120,
+            "name": "Dumle banan",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/dumle-banan-300x300.jpg",
+                "large": "/storage/products/dumle-banan.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 8,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 124,
+                    "name": "Nyhet!",
+                    "slug": "nyhet"
+                }
+            ]
+        },
+        {
+            "id": 15121,
+            "name": "Nöt-Crème Mango Cheesecake",
+            "price": 6,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/cheesecake_mango-300x300.jpg",
+                "large": "/storage/products/cheesecake_mango.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 9,
+            "tags": [
+                {
+                    "id": 113,
+                    "name": "Gelatinfri",
+                    "slug": "gelatinfri"
+                },
+                {
+                    "id": 124,
+                    "name": "Nyhet!",
+                    "slug": "nyhet"
+                }
+            ]
+        },
+        {
+            "id": 15125,
+            "name": "S-Märke Hallonsura",
+            "price": 5,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/s-marke-hallon-300x300.jpg",
+                "large": "/storage/products/s-marke-hallon.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 4,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        },
+        {
+            "id": 15126,
+            "name": "S-Märke Colasura",
+            "price": 5,
+            "on_sale": false,
+            "images": {
+                "thumbnail": "/storage/products/thumbnails/s-marke-cola-300x300.jpg",
+                "large": "/storage/products/s-marke-cola.jpg"
+            },
+            "stock_status": "instock",
+            "stock_quantity": 3,
+            "tags": [
+                {
+                    "id": 114,
+                    "name": "Palmoljefri",
+                    "slug": "palmoljefri"
+                }
+            ]
+        }
+    ]
+}
+
