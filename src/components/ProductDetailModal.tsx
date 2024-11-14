@@ -27,7 +27,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
      // reset initial state
 
      const data = await BortakvallAPI.getProductById(productId)
-     console.log("product detail page",data)
+
 
      setProducts(data)
  }

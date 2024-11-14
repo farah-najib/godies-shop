@@ -44,9 +44,9 @@ const ProducutByTags: React.FC = () => {
                     speedMultiplier={2}
                 />
             )}
-            {data?.products && (
+            {data && (
                 <Row className="gx-3 gy-2">
-                    {data.products.map((product: Product, index: number) => (
+                    {data.map((product: Product, index: number) => (
                         <Col key={index} xs={8} lg={4} className="card-col">
                             <ProductItem key={index} product={product} />
                         </Col>

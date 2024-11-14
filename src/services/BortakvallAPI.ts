@@ -51,8 +51,8 @@ export const getTags = async (): Promise<Tag[]> => {
     return get<Tag[]>('/api/v2/tags')
 }
 
-export const getTagById = async (tagId: string): Promise<Tag> => {
-    return get<Tag>(`/api/v2/tags/${tagId}`)
+export const getTagById = async (tagId: string): Promise<Product[]> => {
+    return get<Product[]>(`/api/v2/tags/${tagId}`)
 }
 
 export const submitOrder = async (
