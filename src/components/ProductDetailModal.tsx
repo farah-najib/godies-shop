@@ -20,14 +20,15 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
 
 
- const [isLoading, setIsLoading] = useState(true)
- const [product, setProducts] = useState<Product | null>(null)
+
+ const [product, setProducts] = useState<Product>()
 
  const getProduct = async () => {
      // reset initial state
-     setIsLoading(true)
+
      const data = await BortakvallAPI.getProductById(productId)
-     setIsLoading(false)
+     console.log("product detail page",data)
+
      setProducts(data)
  }
 
@@ -56,7 +57,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                         className="img-fluid"
                     />
                     <p className="product-description">
-                        {decodeHtmlEntities(product?.description)}
+                        {decodeHtmlEntities(product?.description ?? '')}
                     </p>
                     <h5 className="product-price"> {product?.price} SEK</h5>
                 </div>

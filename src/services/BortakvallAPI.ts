@@ -3,11 +3,12 @@ import type {
     ApiResponse,
     Product,
     OrderRequest,
-    OrderResponse
+    OrderResponse,
+    Tag
 } from '../types/BortakvallAPI.types'
 import { BASE_URL, FAKE_DELAY, USER_ID } from '../utils/Utils'
 
-import products from '../data/products.json'
+// Create axios instance
 const axiosInstance = () => {
     return axios.create({
         baseURL: BASE_URL,
@@ -19,64 +20,65 @@ const axiosInstance = () => {
     })
 }
 
-const get = async (endpoint: string) => {
-    if (endpoint == '/api/v2/products') {
-        return products.data
-    } else {
-        const id = endpoint.split('/').pop()
-        const allIds = products.data.map((product) => product.id.toString())
-        const indexOfProduct = allIds.indexOf(id)
-        return products.data[indexOfProduct]
-    }
-
-    //I should make this function more generic where the ApiResponse take <T> rather than <Product[]> butI noticed this when I start working to get products by tagId endpoint .
-    const response = await axiosInstance().get<ApiResponse<Product[]>>(endpoint)
+// Generic GET function with support for ApiResponse<T>
+const get = async <T>(endpoint: string): Promise<T> => {
+    const response = await axiosInstance().get<ApiResponse<T>>(endpoint)
     if (FAKE_DELAY) {
         await new Promise((r) => setTimeout(r, FAKE_DELAY))
     }
     return response.data.data
 }
-const post = async <Response, Payload>(endpoint: string, data: Payload) => {
+
+// Generic POST function with type parameters for response and payload
+const post = async <Response, Payload>(
+    endpoint: string,
+    data: Payload
+): Promise<Response> => {
     const response = await axiosInstance().post<Response>(endpoint, data)
     return response.data
 }
 
-export const getProducts = async () => {
-    return get('/api/v2/products')
+// API functions
+export const getProducts = async (): Promise<Product[]> => {
+    return get<Product[]>('/api/v2/products')
 }
 
-export const getProductById = async (productId: string) => {
-    return get(`/api/v2/products/${productId}`)
+export const getProductById = async (productId: string): Promise<Product> => {
+    return get<Product>(`/api/v2/products/${productId}`)
 }
 
-export const getTags = async () => {
-    return get('/api/v2/tags')
+export const getTags = async (): Promise<Tag[]> => {
+    return get<Tag[]>('/api/v2/tags')
 }
 
-export const getTagById = async (tagId: string) => {
-    return get(`/api/v2/tags/${tagId}`)
+export const getTagById = async (tagId: string): Promise<Tag> => {
+    return get<Tag>(`/api/v2/tags/${tagId}`)
 }
 
 export const submitOrder = async (
     orderData: OrderRequest
 ): Promise<OrderResponse> => {
-    return post(`/api/v2/users/${USER_ID}/orders`, orderData)
+    return post<OrderResponse, OrderRequest>(
+        `/api/v2/users/${USER_ID}/orders`,
+        orderData
+    )
 }
 
-export const getOrders = async () => {
-    return get(`/api/v2/users/${USER_ID}/orders`)
-}
+// export const getOrders = async (): Promise<Order[]> => {
+//     return get<Order[]>(`/api/v2/users/${USER_ID}/orders`)
+// }
 
-export const getOrderById = async (orderId: string) => {
-    return get(`/api/v2/users/${USER_ID}/orders/${orderId}`)
-}
+// export const getOrderById = async (orderId: string): Promise<Order> => {
+//     return get<Order>(`/api/v2/users/${USER_ID}/orders/${orderId}`)
+// }
 
+// Export all functions
 export default {
     getProducts,
     getProductById,
     getTags,
     getTagById,
     submitOrder,
-    getOrders,
-    getOrderById
+    // getOrders,
+    // getOrderById
 }

@@ -5,7 +5,7 @@ import { CartItems } from '../types/BortakvallAPI.types'
 import { useLocalStorage } from 'usehooks-ts'
 import '../assets/scss/Form.scss'
 export const CheckoutForm: React.FC = () => {
-    const [cartItems, setCartItems] = useLocalStorage<CartItems>('cart', {})
+    const [cartItems] = useLocalStorage<CartItems>('cart', {})
 
     const [formData, setFormData] = useState({
         firstName: 'Dummy',
@@ -18,7 +18,9 @@ export const CheckoutForm: React.FC = () => {
     })
     const [orderSuccess, setOrderSuccess] = useState<OrderResponse | null>(null)
     const [error, setError] = useState<string | null>(null)
-
+ {
+     console.log(orderSuccess)
+ }
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
@@ -62,7 +64,8 @@ export const CheckoutForm: React.FC = () => {
         console.log(orderSuccess)
         return (
             <div>
-                Thank you for your order! Order Number: {orderSuccess.data.id}
+                Thank you for your order! Order Number: {orderSuccess.id}
+
             </div>
         )
     }

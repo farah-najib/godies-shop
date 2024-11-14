@@ -4,7 +4,7 @@ import { Tag } from '../types/BortakvallAPI.types'
 import { Link } from 'react-router-dom'
 // Define the props interface for the ProductTags component
 interface ProductTagsProps {
-    tags: Tag // Array of tags
+    tags: Tag[] // Array of tags
     //onTagClick: (tagId: number) => void // Function that takes a tag ID and returns nothing
 }
 

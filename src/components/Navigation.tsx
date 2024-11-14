@@ -9,7 +9,7 @@ import Badge from 'react-bootstrap/Badge'
 import Button from 'react-bootstrap/Button'
 
 export const Navigation: React.FC = () => {
-    const [cartItems, setCartItems] = useLocalStorage<CartItems>('cart', {})
+    const [cartItems] = useLocalStorage<CartItems>('cart', {})
 
     const productsCount: number = Object.keys(cartItems).length
     const { isDarkMode, toggleTheme } = useTheme()
