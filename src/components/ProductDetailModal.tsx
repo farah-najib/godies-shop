@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { Modal, Button } from 'react-bootstrap'
 import { BASE_URL } from '../utils/Utils'
 import { Product } from '../types/BortakvallAPI.types'
@@ -21,33 +21,33 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
     const productCache = React.useRef<{ [key: string]: Product }>({})
 
-    const getProduct = async () => {
-        if (productCache.current[productId]) {
-            setProduct(productCache.current[productId])
-            return
-        }
-        try {
-            setIsLoading(true)
-            const data = await BortakvallAPI.getProductById(productId)
-            productCache.current[productId] = data
-            setProduct(data)
-        } catch (error) {
-            console.error('Error fetching product:', error)
-        } finally {
-            setIsLoading(false)
-        }
-    }
-    const decodeHtmlEntities = (text: string) => {
-        const element = document.createElement('div')
-        element.innerHTML = text
-        return element.textContent || element.innerText || ''
-    }
+      const getProduct = useCallback(async () => {
+          if (productCache.current[productId]) {
+              setProduct(productCache.current[productId])
+              return
+          }
+          try {
+              setIsLoading(true)
+              const data = await BortakvallAPI.getProductById(productId)
+              productCache.current[productId] = data
+              setProduct(data)
+          } catch (error) {
+              console.error('Error fetching product:', error)
+          } finally {
+              setIsLoading(false)
+          }
+      }, [productId])
+     const decodeHtmlEntities = (text: string) => {
+         const element = document.createElement('div')
+         element.innerHTML = text
+         return element.textContent || element.innerText || ''
+     }
 
     useEffect(() => {
         if (show) {
             getProduct()
         }
-    }, [show, productId])
+    }, [show, productId, getProduct])
 
     return (
         <Modal show={show} onHide={onHide} className="product-modal">
@@ -58,7 +58,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 {isLoading ? (
                     <p>Loading...</p>
                 ) : (
-                    <div>
+                    <div className="product-detail">
                         {product?.images?.large && (
                             <img
                                 src={`${BASE_URL}${product.images.large}`}
@@ -66,8 +66,10 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                                 className="img-fluid"
                             />
                         )}
-                        <p>{decodeHtmlEntities(product?.description)}</p>
-                        <h5>{product?.price} SEK</h5>
+                        <p className="product-description">
+                            {decodeHtmlEntities(product?.description ?? '')}
+                        </p>
+                        <h5 className="product-price">{product?.price} SEK</h5>
                     </div>
                 )}
             </Modal.Body>

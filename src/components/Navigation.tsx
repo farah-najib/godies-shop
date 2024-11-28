@@ -4,16 +4,16 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import { NavLink, Link } from 'react-router-dom'
-import useTheme from '../hooks/useTheme'
+
 import Badge from 'react-bootstrap/Badge'
-import Button from 'react-bootstrap/Button'
+
 
 export const Navigation: React.FC = () => {
     // Track cart items in the localStorage state
     const [cartItems] = useLocalStorage<CartItems>('cart', {})
 
     const productsCount: number = Object.keys(cartItems).length
-    const { isDarkMode, toggleTheme } = useTheme()
+
 
     return (
         <Navbar bg="dark" variant="dark" expand="md">
@@ -33,9 +33,7 @@ export const Navigation: React.FC = () => {
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
-                <Button variant="outline-secondary" onClick={toggleTheme}>
-                    {isDarkMode ? '☀️' : '🌙'}
-                </Button>
+
             </Container>
         </Navbar>
     )

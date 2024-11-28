@@ -4,7 +4,7 @@ import {
     MdRemove,
     MdRemoveShoppingCart
 } from 'react-icons/md'
-import { Product, CartItems } from '../types/BortakvallAPI.types.ts'
+import { Product, CartItems} from '../types/BortakvallAPI.types.ts'
 import { BASE_URL } from '../utils/Utils.tsx'
 import { useLocalStorage } from 'usehooks-ts'
 import ProductDetailModal from './ProductDetailModal'
@@ -74,28 +74,33 @@ const ProductItem: React.FC<ProductProps> = ({ product }) => {
                             <MdAddShoppingCart />
                         </Button>
                         {cartItems[product.id]?.quantity > 0 && (
-                            <Button
-                                variant="link"
-                                className="btn quantity-btn"
-                                onClick={() =>
-                                    handleRemoveQuantity(product.id, 1)
-                                }
-                            >
-                                <Card.Text>
-                                    {cartItems[product.id]?.quantity}
-                                </Card.Text>
-                                <MdRemove />
-                            </Button>
-                        )}
-                        {cartItems[product.id]?.quantity > 0 && (
-                            <Button
-                                variant="link"
-                                className="btn remove-btn"
-                                onClick={() => handleRemoveProduct(product.id)}
-                            >
-                                <MdRemoveShoppingCart />
-                            </Button>
-                        )}
+
+                                <Button
+                                    variant="link"
+                                    className="btn quantity-btn"
+                                    onClick={() =>
+                                        handleRemoveQuantity(product.id, 1)
+                                    }
+                                >
+                                    <Card.Text>
+                                        {cartItems[product.id]?.quantity}
+                                    </Card.Text>
+                                    <MdRemove />
+                                </Button>
+                            )}
+                                {cartItems[product.id]?.quantity > 0 && (
+                                    <Button
+                                        variant="link"
+                                        className="btn remove-btn"
+                                        onClick={() =>
+                                            handleRemoveProduct(product.id)
+                                        }
+                                    >
+                                        <MdRemoveShoppingCart />
+                                    </Button>
+                                )}
+
+                     
                     </div>
                 </Card.Body>
             </Card>
@@ -107,5 +112,6 @@ const ProductItem: React.FC<ProductProps> = ({ product }) => {
         </>
     )
 }
+
 
 export default ProductItem
