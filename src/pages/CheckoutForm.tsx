@@ -22,22 +22,39 @@ export const CheckoutForm: React.FC = () => {
     })
     const [orderSuccess, setOrderSuccess] = useState<OrderResponse | null>(null)
     const [error, setError] = useState<string | null>(null)
+    const [loading, setLoading] = useState(false)
 
-    const validateForm = () => {
+
+    const validateForm = (): string | null => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
         const { firstName, lastName, address, postcode, city, email } = formData
-        return firstName && lastName && address && postcode && city && email
+
+        if (!firstName) return 'First name is required.'
+        if (!lastName) return 'Last name is required.'
+        if (!address) return 'Address is required.'
+        if (postcode.length !== 6) return 'Postcode must be 6 characters.'
+        if (!city) return 'City is required.'
+        if (!emailRegex.test(email)) return 'Invalid email format.'
+        return null
     }
+
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
 
+
     const handleOrder = async () => {
-        if (!validateForm()) {
-            setError('Please fill in all required fields correctly.')
+        const validationError = validateForm()
+        if (validationError) {
+            setError(validationError)
             return
         }
 
+        setLoading(true) // Set loading state to true
+        setError(null) // Clear previous errors
+
+        // Prepare order items and total price
         const orderItems = Object.values(cartItems).map((item) => ({
             product_id: item.product.id,
             qty: item.quantity,
@@ -71,8 +88,6 @@ export const CheckoutForm: React.FC = () => {
             if (response.status === 'success') {
                 setOrderSuccess(response.data) // Access the actual OrderResponse data
                 localStorage.removeItem('cart') // Clear cart after successful order
-
-                // Force re-render by setting cartItems to an empty object
                 setCartItems({}) // Reset cart in localStorage and force update
             } else {
                 setError(
@@ -85,9 +100,12 @@ export const CheckoutForm: React.FC = () => {
             setError(
                 'An error occurred while placing your order. Please try again.'
             )
+        } finally {
+            setLoading(false) // Reset loading state
         }
     }
 
+    // Render success message
     if (orderSuccess) {
         return (
             <div>
@@ -145,7 +163,9 @@ export const CheckoutForm: React.FC = () => {
                 value={formData.phone}
                 onChange={handleChange}
             />
-            <button onClick={handleOrder}>Place Order</button>
+            <button onClick={handleOrder} disabled={loading}>
+                {loading ? 'Processing...' : 'Place Order'}
+            </button>
         </div>
     )
 }
