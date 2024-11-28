@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React from 'react'
 import { Modal, Button } from 'react-bootstrap'
 import { BASE_URL } from '../utils/Utils'
 import { Product } from '../types/BortakvallAPI.types'
 import BortakvallAPI from '../services/BortakvallAPI'
+import { useQuery } from '@tanstack/react-query'
 import '../assets/scss/detail.scss'
 
 interface ProductDetailModalProps {
@@ -11,43 +12,32 @@ interface ProductDetailModalProps {
     onHide: () => void
 }
 
+const fetchProduct = async (productId: string): Promise<Product> => {
+    const data = await BortakvallAPI.getProductById(productId)
+    return data
+}
+
+const decodeHtmlEntities = (text: string) => {
+    const element = document.createElement('div')
+    element.innerHTML = text
+    return element.textContent || element.innerText || ''
+}
+
 const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
     productId,
     show,
     onHide
 }) => {
-    const [isLoading, setIsLoading] = useState(false)
-    const [product, setProduct] = useState<Product | null>(null)
-
-    const productCache = React.useRef<{ [key: string]: Product }>({})
-
-      const getProduct = useCallback(async () => {
-          if (productCache.current[productId]) {
-              setProduct(productCache.current[productId])
-              return
-          }
-          try {
-              setIsLoading(true)
-              const data = await BortakvallAPI.getProductById(productId)
-              productCache.current[productId] = data
-              setProduct(data)
-          } catch (error) {
-              console.error('Error fetching product:', error)
-          } finally {
-              setIsLoading(false)
-          }
-      }, [productId])
-     const decodeHtmlEntities = (text: string) => {
-         const element = document.createElement('div')
-         element.innerHTML = text
-         return element.textContent || element.innerText || ''
-     }
-
-    useEffect(() => {
-        if (show) {
-            getProduct()
-        }
-    }, [show, productId, getProduct])
+    const {
+        data: product,
+        isLoading,
+        error
+    } = useQuery({
+        queryKey: ['product', productId],
+        queryFn: () => fetchProduct(productId),
+        enabled: show, // Only fetch data when the modal is shown
+        staleTime: 1000 * 60 * 5 // Cache data for 5 minutes
+    })
 
     return (
         <Modal show={show} onHide={onHide} className="product-modal">
@@ -57,6 +47,8 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             <Modal.Body>
                 {isLoading ? (
                     <p>Loading...</p>
+                ) : error ? (
+                    <p>Error loading product details. Please try again.</p>
                 ) : (
                     <div className="product-detail">
                         {product?.images?.large && (
