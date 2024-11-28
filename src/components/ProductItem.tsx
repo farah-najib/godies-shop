@@ -4,7 +4,7 @@ import {
     MdRemove,
     MdRemoveShoppingCart
 } from 'react-icons/md'
-import { Product, CartItems} from '../types/BortakvallAPI.types.ts'
+import { Product, CartItems } from '../types/BortakvallAPI.types.ts'
 import { BASE_URL } from '../utils/Utils.tsx'
 import { useLocalStorage } from 'usehooks-ts'
 import ProductDetailModal from './ProductDetailModal'
@@ -51,13 +51,13 @@ const ProductItem: React.FC<ProductProps> = ({ product }) => {
                     variant="top"
                     src={`${BASE_URL}${product.images.thumbnail}`}
                 />
-
                 <Card.Body className="price">
                     <Card.Text className="title">{product.name}</Card.Text>
                     <div className="desc">
                         <ProductTags tags={product.tags} />
                         {/*renderTags()*/}
                     </div>
+
                     <Card.Text>{product.price.toFixed(2)}</Card.Text>
                     <Button
                         variant="link"
@@ -87,7 +87,6 @@ const ProductItem: React.FC<ProductProps> = ({ product }) => {
                                 <MdRemove />
                             </Button>
                         )}
-
                         {cartItems[product.id]?.quantity > 0 && (
                             <Button
                                 variant="link"
@@ -100,7 +99,6 @@ const ProductItem: React.FC<ProductProps> = ({ product }) => {
                     </div>
                 </Card.Body>
             </Card>
-            {/* Product Detail Modal */}
             <ProductDetailModal
                 productId={product.id}
                 show={showDetailModal}
