@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Modal, Button } from 'react-bootstrap'
 import { BASE_URL } from '../utils/Utils'
-import { Product } from '../types/BortakvallAPI.types' // Update with correct types
+import { Product } from '../types/BortakvallAPI.types'
 import BortakvallAPI from '../services/BortakvallAPI'
 import { FaShareAlt } from 'react-icons/fa'
 import '../assets/scss/detail.scss'
@@ -17,14 +17,19 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
     show,
     onHide
 }) => {
-    const [product, setProducts] = useState<Product>()
+    const [isLoading, setIsLoading] = useState(true)
+    const [product, setProduct] = useState<Product | null>(null)
 
     const getProduct = async () => {
-        // reset initial state
-
-        const data = await BortakvallAPI.getProductById(productId)
-
-        setProducts(data)
+        try {
+            setIsLoading(true)
+            const data = await BortakvallAPI.getProductById(productId)
+            setProduct(data)
+        } catch (error) {
+            console.error('Error fetching product:', error)
+        } finally {
+            setIsLoading(false)
+        }
     }
 
     const decodeHtmlEntities = (text: string) => {
@@ -34,27 +39,36 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
     }
 
     useEffect(() => {
-        getProduct()
-    })
+        if (show) {
+            getProduct()
+        }
+    }) // Lägg till `show` som en dependency
+
     return (
         <Modal show={show} onHide={onHide} className="product-modal">
             <Modal.Header closeButton className="modal-header">
                 <Modal.Title className="modal-title">
-                    {product?.name}
+                    {product?.name || 'Loading...'}
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <div className="product-detail">
-                    <img
-                        src={`${BASE_URL}${product?.images?.large}`}
-                        alt={product?.name}
-                        className="img-fluid"
-                    />
-                    <p className="product-description">
-                        {decodeHtmlEntities(product?.description ?? '')}
-                    </p>
-                    <h5 className="product-price"> {product?.price} SEK</h5>
-                </div>
+                {isLoading ? (
+                    <p>Loading...</p>
+                ) : (
+                    <div className="product-detail">
+                        {product?.images?.large && (
+                            <img
+                                src={`${BASE_URL}${product.images.large}`}
+                                alt={product?.name}
+                                className="img-fluid"
+                            />
+                        )}
+                        <p className="product-description">
+                            {decodeHtmlEntities(product?.description || '')}
+                        </p>
+                        <h5 className="product-price">{product?.price} SEK</h5>
+                    </div>
+                )}
             </Modal.Body>
             <Modal.Footer className="modal-footer">
                 <Button variant="primary" className="btn-share">
