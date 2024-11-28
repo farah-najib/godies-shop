@@ -9,12 +9,14 @@ import Badge from 'react-bootstrap/Badge'
 import Button from 'react-bootstrap/Button'
 
 export const Navigation: React.FC = () => {
+    // Track cart items in the localStorage state
     const [cartItems] = useLocalStorage<CartItems>('cart', {})
 
     const productsCount: number = Object.keys(cartItems).length
     const { isDarkMode, toggleTheme } = useTheme()
+
     return (
-        <Navbar bg="dark" variant="dark" expand="md" >
+        <Navbar bg="dark" variant="dark" expand="md">
             <Container>
                 <Navbar.Brand as={Link} to="/">
                     Bortakväll

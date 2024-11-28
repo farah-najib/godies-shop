@@ -55,30 +55,28 @@ export const getTagById = async (tagId: string): Promise<Product[]> => {
     return get<Product[]>(`/api/v2/tags/${tagId}`)
 }
 
+
+
+
+
 export const submitOrder = async (
     orderData: OrderRequest
-): Promise<OrderResponse> => {
-    return post<OrderResponse, OrderRequest>(
+): Promise<ApiResponse<OrderResponse>> => {
+    return post<ApiResponse<OrderResponse>, OrderRequest>(
         `/api/v2/users/${USER_ID}/orders`,
         orderData
     )
 }
 
-// export const getOrders = async (): Promise<Order[]> => {
-//     return get<Order[]>(`/api/v2/users/${USER_ID}/orders`)
-// }
 
-// export const getOrderById = async (orderId: string): Promise<Order> => {
-//     return get<Order>(`/api/v2/users/${USER_ID}/orders/${orderId}`)
-// }
 
-// Export all functions
+
+
 export default {
     getProducts,
     getProductById,
     getTags,
     getTagById,
     submitOrder,
-    // getOrders,
-    // getOrderById
+
 }

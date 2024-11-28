@@ -1,9 +1,9 @@
+import  { useEffect } from 'react'
 import CartItem from '../components/CartItem.tsx'
 import ListGroup from 'react-bootstrap/ListGroup'
-import { useEffect } from 'react'
 import { useLocalStorage } from 'usehooks-ts'
 import { CartItems, Product } from '../types/BortakvallAPI.types.ts'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom' // Import useLocation
 import '../assets/scss/Cartlist.scss'
 
 import {
@@ -39,9 +39,12 @@ const CartPage = () => {
     )
 
     const navigate = useNavigate() // Use history to navigate to the checkout page
+    const location = useLocation() // Access the current location object
+
+    // Scroll to top whenever the location (route) changes
     useEffect(() => {
         window.scrollTo(0, 0)
-    }, [location])
+    }, [location]) // Dependency array includes 'location' to scroll to top on route change
 
     const handleCheckout = () => {
         if (Object.keys(cartItems).length > 0) {
@@ -52,7 +55,7 @@ const CartPage = () => {
     }
     return (
         <>
-            <h1 className="mb-3">Cart </h1>
+            <h1 className="mb-3">Cart</h1>
             <ListGroup className="item-list">
                 {Object.values(cartItems).map((product, index) => (
                     <CartItem
@@ -74,7 +77,7 @@ const CartPage = () => {
                 className="checkout-btn"
             >
                 Go to Checkout
-            </button>{' '}
+            </button>
         </>
     )
 }

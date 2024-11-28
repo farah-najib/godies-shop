@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Modal, Button} from 'react-bootstrap'
+import { Modal, Button } from 'react-bootstrap'
 import { BASE_URL } from '../utils/Utils'
 import { Product } from '../types/BortakvallAPI.types' // Update with correct types
 import BortakvallAPI from '../services/BortakvallAPI'
@@ -17,31 +17,25 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
     show,
     onHide
 }) => {
+    const [product, setProducts] = useState<Product>()
 
+    const getProduct = async () => {
+        // reset initial state
 
+        const data = await BortakvallAPI.getProductById(productId)
 
+        setProducts(data)
+    }
 
- const [product, setProducts] = useState<Product>()
+    const decodeHtmlEntities = (text: string) => {
+        const element = document.createElement('div')
+        element.innerHTML = text
+        return element.textContent || element.innerText || ''
+    }
 
- const getProduct = async () => {
-     // reset initial state
-
-     const data = await BortakvallAPI.getProductById(productId)
-
-
-     setProducts(data)
- }
-
- const decodeHtmlEntities = (text: string ) => {
-     const element = document.createElement('div')
-     element.innerHTML = text
-     return element.textContent || element.innerText || ''
- }
-
-
- useEffect(() => {
-     getProduct()
- }, )
+    useEffect(() => {
+        getProduct()
+    })
     return (
         <Modal show={show} onHide={onHide} className="product-modal">
             <Modal.Header closeButton className="modal-header">

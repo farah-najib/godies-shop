@@ -1,31 +1,43 @@
 import React, { useState } from 'react'
 import { submitOrder } from '../services/BortakvallAPI'
-import { OrderRequest, OrderResponse } from '../types/BortakvallAPI.types'
-import { CartItems } from '../types/BortakvallAPI.types'
+import {
+    OrderRequest,
+    OrderResponse,
+    ApiResponse,
+    CartItems
+} from '../types/BortakvallAPI.types'
 import { useLocalStorage } from 'usehooks-ts'
 import '../assets/scss/Form.scss'
-export const CheckoutForm: React.FC = () => {
-    const [cartItems] = useLocalStorage<CartItems>('cart', {})
 
+export const CheckoutForm: React.FC = () => {
+    const [cartItems, setCartItems] = useLocalStorage<CartItems>('cart', {})
     const [formData, setFormData] = useState({
-        firstName: 'Dummy',
-        lastName: 'Dummy',
-        address: 'Dummy',
-        postcode: '0123',
-        city: 'Dummy',
-        email: 'dummy@dummy.com',
-        phone: '0123'
+        firstName: '',
+        lastName: '',
+        address: '',
+        postcode: '',
+        city: '',
+        email: '',
+        phone: ''
     })
     const [orderSuccess, setOrderSuccess] = useState<OrderResponse | null>(null)
     const [error, setError] = useState<string | null>(null)
- {
-     console.log(orderSuccess)
- }
+
+    const validateForm = () => {
+        const { firstName, lastName, address, postcode, city, email } = formData
+        return firstName && lastName && address && postcode && city && email
+    }
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
 
     const handleOrder = async () => {
+        if (!validateForm()) {
+            setError('Please fill in all required fields correctly.')
+            return
+        }
+
         const orderItems = Object.values(cartItems).map((item) => ({
             product_id: item.product.id,
             qty: item.quantity,
@@ -52,20 +64,36 @@ export const CheckoutForm: React.FC = () => {
         }
 
         try {
-            const response = await submitOrder(orderRequest)
-            setOrderSuccess(response)
-            localStorage.removeItem('cart') // Clear cart after successful order
+            const response: ApiResponse<OrderResponse> = await submitOrder(
+                orderRequest
+            )
+
+            if (response.status === 'success') {
+                setOrderSuccess(response.data) // Access the actual OrderResponse data
+                localStorage.removeItem('cart') // Clear cart after successful order
+
+                // Force re-render by setting cartItems to an empty object
+                setCartItems({}) // Reset cart in localStorage and force update
+            } else {
+                setError(
+                    response.message ||
+                        'Failed to place order. Please try again.'
+                )
+            }
         } catch (e) {
-            setError('Failed to place order. Please try again.')
+            console.error('Order submission error:', e)
+            setError(
+                'An error occurred while placing your order. Please try again.'
+            )
         }
     }
 
     if (orderSuccess) {
-        console.log(orderSuccess)
         return (
             <div>
-                Thank you for your order! Order Number: {orderSuccess.id}
-
+                <h2>Thank you for your order!</h2>
+                <p>Order Number: {orderSuccess.id}</p>
+                <p>Order Total: {orderSuccess.order_total} SEK</p>
             </div>
         )
     }
@@ -77,44 +105,44 @@ export const CheckoutForm: React.FC = () => {
             <input
                 name="firstName"
                 placeholder="First Name"
-                defaultValue="Dummy"
+                value={formData.firstName}
                 onChange={handleChange}
             />
             <input
                 name="lastName"
                 placeholder="Last Name"
-                defaultValue="Dummy"
+                value={formData.lastName}
                 onChange={handleChange}
             />
             <input
                 name="address"
                 placeholder="Address"
-                defaultValue="Dummy"
+                value={formData.address}
                 onChange={handleChange}
             />
             <input
                 name="postcode"
                 placeholder="Postcode"
-                defaultValue="0123"
+                value={formData.postcode}
                 onChange={handleChange}
             />
             <input
                 name="city"
                 placeholder="City"
-                defaultValue="Dummy"
+                value={formData.city}
                 onChange={handleChange}
             />
             <input
                 name="email"
                 placeholder="Email"
-                defaultValue="dummy@dummy.com"
+                value={formData.email}
                 onChange={handleChange}
                 type="email"
             />
             <input
                 name="phone"
                 placeholder="Phone (optional)"
-                defaultValue="0123"
+                value={formData.phone}
                 onChange={handleChange}
             />
             <button onClick={handleOrder}>Place Order</button>
