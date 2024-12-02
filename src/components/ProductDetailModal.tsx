@@ -35,8 +35,8 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
     } = useQuery({
         queryKey: ['product', productId],
         queryFn: () => fetchProduct(productId),
-        enabled: show, // Only fetch data when the modal is shown
-        staleTime: 1000 * 60 * 5 // Cache data for 5 minutes
+        enabled: show,
+        staleTime: 1000 * 60 * 5 
     })
 
     return (

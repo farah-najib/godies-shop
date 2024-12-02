@@ -1,96 +1,134 @@
-// _card.scss (mobile-first design)
-.card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  background-color: #610f0f78;;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.card.shop-item {
+    width: 18rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
-  // Mobile Styles (default)
-  .card-img-top {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .card-body {
-    padding: 12px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    .card-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 8px;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     }
 
-    .card-text {
-      font-size: 1rem;
-      color: #333;
-      margin-bottom: 8px;
+    .thumb {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .view-btn {
+         display: block;
+        margin: 10px auto;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        border-width: 0;
+        text-decoration: none;
+        background-color: transparent;
+
+        &:hover {
+            border: 1.5px solid #007bff;
+
+        }
+
+        &:focus{
+            background-color: #0056b3;
+            color: #fff;
+            outline: none;
+            box-shadow: none;
+        }
     }
 
     .price {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #4CAF50;
-      margin-bottom: 12px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        text-align: center;
     }
+      .desc {
+      margin-bottom: 15px;
+      text-align: center;
+      color: #555;
+    .product-tag {
+        display: flex;
+        justify-content: center;
+        padding: 0.25rem 0.5rem;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        margin-right: 5px;
+    }
+      }
 
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
 
-      .tag {
-        background-color: #f0f0f0;
-        padding: 6px 12px;
+    .btn.add-btn {
+        margin: 10px auto;
         font-size: 0.9rem;
-        border-radius: 12px;
-        color: #555;
-        border: 1px solid #ddd;
-      }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 15px;
+        background-color: #28a745;
+        color: #fff;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 0.9rem;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #218838;
+        }
+
+        .custom-badge {
+
+            margin-left: 5px;
+            font-size: 0.75rem;
+            border-radius: 10px;
+        }
+
+        svg {
+            margin-left: 5px;
+            font-size: 1.2rem;
+        }
     }
-  }
+}
 
-  // Tablet Styles (medium screen)
-  @media (min-width: 768px) {
-    .card-body {
-      .card-title {
-        font-size: 1.4rem;
-      }
+// Responsive adjustments
+@media (min-width: 576px) {
+    .card.shop-item {
+        width: 20rem;
 
-      .price {
-        font-size: 1.4rem;
-      }
+        .price {
+            .title {
+                font-size: 1.1rem;
+            }
+
+            .btn.add-btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
     }
-  }
+}
 
-  // Desktop Styles (large screen)
-  @media (min-width: 1200px) {
-    .card {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+@media (min-width: 768px) {
+    .card.shop-item {
+        width: 22rem;
+
+        .price {
+            padding: 15px;
+
+            .title {
+                font-size: 1.2rem;
+            }
+
+            .btn.add-btn {
+                padding: 12px 24px;
+                font-size: 1.1rem;
+            }
+        }
     }
-
-    .card-img-top {
-      width: 40%;
-      max-width: 200px;
-      margin-right: 16px;
-    }
-
-    .card-body {
-      padding: 16px;
-      .card-title {
-        font-size: 1.6rem;
-      }
-
-      .price {
-        font-size: 1.6rem;
-      }
-    }
-  }
 }
